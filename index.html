@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18310737643"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18310737643');
+</script>
 <title>Mega Kids Activity Bundle — 450+ Printable Pages | BrightSprouts</title>
 <meta name="description" content="450+ printable activity pages for kids 3-12: mazes, word searches, math practice, letter tracing, sudoku, coloring & more. Instant download, print forever. $19 launch price.">
 <meta property="og:title" content="Mega Kids Activity Bundle — 450+ Printable Pages">
@@ -196,24 +204,13 @@
 </footer>
 
 <script>
-  // Google tag (gtag.js) — paste your Google Ads tag ID (AW-XXXXXXXXX) to activate tracking.
-  var GOOGLE_TAG_ID = "AW-18310737643";
-  if (GOOGLE_TAG_ID) {
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GOOGLE_TAG_ID;
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', GOOGLE_TAG_ID);
-    document.querySelectorAll('.cta').forEach(function(el){
-      el.addEventListener('click', function(){
-        gtag('event', 'begin_checkout', {value: 19.00, currency: 'USD'});
-        gtag('event', 'conversion', {send_to: 'AW-18310737643/71aSCIaxxc0cEOvdnptE', value: 1.0, currency: 'ILS'});
-      });
+  // Conversion tracking — the Google tag itself is loaded in <head>.
+  document.querySelectorAll('.cta').forEach(function(el){
+    el.addEventListener('click', function(){
+      gtag('event', 'begin_checkout', {value: 19.00, currency: 'USD'});
+      gtag('event', 'conversion', {send_to: 'AW-18310737643/71aSCIaxxc0cEOvdnptE', value: 1.0, currency: 'ILS'});
     });
-  }
+  });
 </script>
 </body>
 </html>
