@@ -210,6 +210,7 @@
     document.querySelectorAll('.cta').forEach(function(el){
       el.addEventListener('click', function(){
         gtag('event', 'begin_checkout', {value: 19.00, currency: 'USD'});
+        gtag('event', 'conversion', {send_to: 'AW-18310737643/71aSCIaxxc0cEOvdnptE', value: 1.0, currency: 'ILS'});
       });
     });
   }
